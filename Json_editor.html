@@ -5,27 +5,47 @@
 	<link rel="stylesheet" type="text/css" href="">
 	<title>JSON Editor</title>
 	<script src="jquery-3.4.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
 </head>
 <body>
-	<center>
-		<h1>JSON Editor</h1>
-	</center>
-
+	
+	<h1>JSON Editor</h1>
 
 	<span>Enter JSON here</span>
 	<br>
 	<button id="clear" onclick="document.getElementById('code-area').value=''">Clear</button>
 	<br>
 	<br>
-	<div id="code-box">
-	<textarea id="code-area" name="code-area" placeholder="Enter here" cols="50" rows="30"></textarea>
-	</div>
-	<div id="button">
-		<button id="button">></button>
-	</div>
-	<div id="output">
+	<center>
+	<table>
+		<tr>
+			<td>
+				<div id="code-box">
+					<textarea id="code-area" name="code-area" placeholder="Enter here" cols="50" rows="30"></textarea>
+				</div>
+			</td>
 
-	</div>
+			<td>
+				<div id="button">
+				<button id="button"> > </button>
+				</div>
+			</td>
+
+			<td>
+				<textarea id="output" name="output" cols="50" rows="30"></textarea>			
+			</td>
+
+			
+		</tr>	
+	</table>
+</center>
+
+	
+
+	
 <script src="./script.js"></script>
 </body>
 </html>
