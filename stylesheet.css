@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+}
+.main-heading {
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+
+.navbar {
+
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  background-color: black;
+}
+
+#output {
+	color: black;
+}
