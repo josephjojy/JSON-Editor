@@ -23,7 +23,7 @@ Any web browser
 
 ## Screenshots
 
-![Screenshot #1](https://cdn1.imggmi.com/uploads/2020/1/26/2ba8573cb651340b63826578f4195b3e-full.png "Main Page")
+![](https://i.imgur.com/YJZ5DkK.png)
 
 ## Authors
 
