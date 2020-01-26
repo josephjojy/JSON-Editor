@@ -2,50 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="">
 	<title>JSON Editor</title>
-	<script src="jquery-3.4.1.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-
+	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
-<body>
-	
-	<h1>JSON Editor</h1>
-
-	<span>Enter JSON here</span>
-	<br>
-	<button id="clear" onclick="document.getElementById('code-area').value=''">Clear</button>
-	<br>
-	<br>
-	<center>
-	<table>
-		<tr>
-			<td>
-				<div id="code-box">
-					<textarea id="code-area" name="code-area" placeholder="Enter here" cols="50" rows="30"></textarea>
-				</div>
-			</td>
-
-			<td>
-				<div id="button">
-				<button id="button"> > </button>
-				</div>
-			</td>
-
-			<td>
-				<textarea id="output" name="output" cols="50" rows="30"></textarea>			
-			</td>
-
-			
-		</tr>	
-	</table>
-</center>
-
-	
-
-	
+<body>	
+	<span id="title">JSON Editor</span>
+	<div class="content">
+		<div class="input-container">
+			<textarea id="code-area" placeholder="Enter JSON here" cols="40" rows="20"></textarea>
+		</div>
+		<div class="button-container">
+			<a href="#" onclick="document.getElementById('code-area').value=''"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></a>
+			<a href="#" onclick="convertToText()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1 18 18"><path d="M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z"/></svg></a>
+		</div>
+		<div class="output-container">
+			<textarea id="output" placeholder="Output will be displayed here" cols="40" rows="20"></textarea>			
+		</div>
+	</div>
+<script src="./jquery-3.4.1.min.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
